@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clicker Game</title>
+  </head>
+  <body>
+
+    <h1>Clicker Game</h1>
+
+    <div class="main">
+      <!-- This is where all the stats go: i.e. money earned, earnings, etc. - also includes the click button -->
+      <h2>Current Stats</h2>
+      <p>Current money: $<span id="stats-money"></span></p>
+      <p>Lifetime earnings: $<span id="stats-lifesavings"></span></p>
+      <p>Earnings Per Click: $<span id="stats-manualvalue"></span></p>
+      <p>Earnings Per Second: $<span id="stats-autovalue"></span>/s</p>
+      <p><button onclick="clickerGame.manualClick()">Click</button>
+    </div>
+
+    <div class="shop" id="shop">
+      <!-- This section will include any items available for purchase -->
+      <h2>Shop</h2>
+      <p>Assets Owned: <span id="total-assets"></span></p>
+
+    </div>
+
+    <div class="achievements" id="achievements">
+      <!-- This section will include achievements and milestones -->
+      <h2>Achievements</h2>
+      <p>Number of Achievements: <span id="total-achievements"></span></p>
+
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
